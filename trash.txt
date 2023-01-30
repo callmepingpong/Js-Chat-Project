@@ -1,0 +1,10 @@
+<script>
+        fetch('https://greenvelvet.alwaysdata.net/kwick/api/ping')
+            .then(result => result.json())
+            .then(json => {
+                console.log('Fetch resolved', json.result.ready); 
+                document.querySelector('#result').innerHTML = json.result.ready; 
+            }).catch(error => {
+                console.error('Fetch rejected', error);
+            })
+    </script>

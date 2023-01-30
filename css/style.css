@@ -1,0 +1,12 @@
+.all_background {
+    width: 100%;
+    background-color: black;
+    object-fit: cover;
+}
+.section_main {
+    background-color: white;
+}
+
+.section_main h1 {
+    color: black;
+}
